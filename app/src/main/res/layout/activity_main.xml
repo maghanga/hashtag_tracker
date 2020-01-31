@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Go to search hashtags"
-        android:id="@+id/findRestaurantsButton"
+        android:id="@+id/navigateToSearchButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
