@@ -7,21 +7,32 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
+        android:id="@+id/BgImageView"
         android:src="@drawable/hashtag"
         android:scaleType="centerCrop" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is a twitter Hashtag Tracker, you can get the users and posts using any hashtag you search for."
+        android:text="This is a twitter Hashtag Tracker, you can get the users and posts using any hashtag you search for"
         android:layout_marginTop="35dp"
         android:id="@+id/appNameTextView"
-        android:textColor="@color/colorTextIcons"
+        android:textColor="@color/colorPrimaryText"
         android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to search hashtags"
+        android:id="@+id/findRestaurantsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTextIcons" />
 
 
 
