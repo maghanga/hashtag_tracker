@@ -13,21 +13,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-            android:text="Enter the hashtag you want to track and click the button to see your results"
+        android:text="Enter the hashtag of your liking and see users and posts under the hashtag"
         android:layout_marginTop="35dp"
         android:id="@+id/instructionsTextView"
         android:textColor="@color/colorPrimaryText"
         android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
+        android:gravity="clip_vertical"
        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationEditText"
+        android:background="@color/colorTextIcons"
+        android:layout_above="@+id/searchHashtagButton"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:hint="Enter Hashtag"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find Posts"
-        android:id="@+id/navigateToSearchButton"
+        android:id="@+id/searchHashtagButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
