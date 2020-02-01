@@ -12,7 +12,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class SearchHashtagActivity extends AppCompatActivity {
+public class SearchHashtagActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.searchHashtagButton)
     Button mSearchHashtagButton;
     @BindView(R.id.hashtagEditText)
@@ -27,15 +27,18 @@ public class SearchHashtagActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search_hashtag);
         ButterKnife.bind(this);
 
-        mSearchHashtagButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                String hashtag = mHashtagEditText.getText().toString();
-                Intent intent = new Intent(SearchHashtagActivity.this, HashtagActivity.class);
-                intent.putExtra("hashtag", hashtag);
-                startActivity(intent);
-            }
-        });
+        mSearchHashtagButton.setOnClickListener(this);
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == mSearchHashtagButton) {
+            String hashtag = mHashtagEditText.getText().toString();
+            Intent intent = new Intent(SearchHashtagActivity.this, HashtagActivity.class);
+            intent.putExtra("hashtag", hashtag);
+            startActivity(intent);
+        }
     }
 }
