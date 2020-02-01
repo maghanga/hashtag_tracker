@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,6 +28,8 @@ public class SearchHashtagActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_hashtag);
         ButterKnife.bind(this);
+
+        Toast.makeText(SearchHashtagActivity.this, "Type #Arsenal as an example and search to get posts from the hashtag", Toast.LENGTH_SHORT).show();
 
         mSearchHashtagButton.setOnClickListener(this);
 
