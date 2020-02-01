@@ -11,7 +11,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.navigateToSearchButton)
     Button mNavigateToSearchButton;
     @BindView(R.id.appNameTextView)
@@ -24,14 +24,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mNavigateToSearchButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SearchHashtagActivity.class);
-                startActivity(intent);
 
+        mNavigateToSearchButton.setOnClickListener(this);
 
-            }
-        });
     }
+
+
+    @Override
+    public void onClick(View v) {
+        if(v == mNavigateToSearchButton) {
+            Intent intent = new Intent(MainActivity.this, SearchHashtagActivity.class);
+            startActivity(intent);
+        }
+
+    }
+
 }
