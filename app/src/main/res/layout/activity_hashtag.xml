@@ -9,6 +9,7 @@
         android:textStyle="normal"
         android:textSize="25dp"
         android:textColor="@color/colorPrimaryText"
+        android:fontFamily="serif"
         />
 
     <ListView
