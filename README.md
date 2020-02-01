@@ -4,8 +4,9 @@ This is a twitter Hashtag Tracker, you can get posts under any hashtag you searc
 
 ### Prerequisites
 
-*Java or Android knowledge
+* Java or Android knowledge
 * Android studio
+
 ```
 https://developer.android.com/studio
 ```
@@ -33,11 +34,11 @@ Not deployed as of yet
 
 ## Contributing
 
-Please email me at [thinknehru@gmail.com]
+Please email me at thinknehru@gmail.com
 
 ## Author
 
-* **Nehru O'neil** (https://github.com/thinknehru)
+* [**Nehru O'neil**] (https://github.com/thinknehru)
 
 
 ## License
