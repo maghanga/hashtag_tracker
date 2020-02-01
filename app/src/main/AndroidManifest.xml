@@ -16,7 +16,8 @@
             </meta-data>
         </activity>
         <activity
-            android:name=".SearchHashtagActivity" />
+            android:name=".SearchHashtagActivity"
+            android:theme="@style/NoActionBarTheme"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
