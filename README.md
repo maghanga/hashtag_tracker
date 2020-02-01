@@ -38,7 +38,7 @@ Please email me at thinknehru@gmail.com
 
 ## Author
 
-* [**Nehru O'neil**] (https://github.com/thinknehru)
+* [**Nehru O'neil**](https://github.com/thinknehru)
 
 
 ## License
