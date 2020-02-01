@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HashtagActivity"></activity>
-        <activity android:name=".SearchHashtagActivity" />
+        <activity android:name=".HashtagActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thinknehru.hashtag_tracker.SearchHashtagActivity">
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".SearchHashtagActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
