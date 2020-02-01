@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class HashtagActivity extends AppCompatActivity {
     @BindView(R.id.hashtagTextView)
@@ -18,15 +19,15 @@ public class HashtagActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hashtag);
-
-        mListView = (ListView) findViewById(R.id.listView);
+        ButterKnife.bind(this);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, posts);
         mListView.setAdapter(adapter);
 
-        Intent inten = getIntent();
+        Intent intent = getIntent();
         String hashtag = getIntent().getStringExtra("hashtag");
         mHashtagTextView.setText("Here are all the posts from the hashtag " + hashtag);
 
