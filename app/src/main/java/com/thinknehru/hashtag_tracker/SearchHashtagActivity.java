@@ -31,6 +31,8 @@ public class SearchHashtagActivity extends AppCompatActivity implements View.OnC
 
         Toast.makeText(SearchHashtagActivity.this, "Type #Arsenal as an example and search to get posts from the hashtag", Toast.LENGTH_SHORT).show();
 
+        Log.d("SearchHashtagActivity", "In the onCreate: works as expected");
+
         mSearchHashtagButton.setOnClickListener(this);
 
 
@@ -43,6 +45,8 @@ public class SearchHashtagActivity extends AppCompatActivity implements View.OnC
             Intent intent = new Intent(SearchHashtagActivity.this, HashtagActivity.class);
             intent.putExtra("hashtag", hashtag);
             startActivity(intent);
+
+        Log.d("SearchHashtagActivity", "In the onClick: works as expected");
         }
     }
 }

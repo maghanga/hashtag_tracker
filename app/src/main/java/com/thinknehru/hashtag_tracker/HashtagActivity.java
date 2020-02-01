@@ -32,7 +32,7 @@ public class HashtagActivity extends AppCompatActivity {
         String hashtag = getIntent().getStringExtra("hashtag");
         mHashtagTextView.setText("Here are all the posts from the hashtag " + hashtag);
 
-        Toast.makeText(HashtagActivity.this, "Success", Toast.LENGTH_LONG).show();
+        Toast.makeText(HashtagActivity.this, "Success!!", Toast.LENGTH_LONG).show();
 
     }
 }
