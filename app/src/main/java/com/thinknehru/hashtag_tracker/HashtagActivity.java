@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import butterknife.BindView;
 
 public class HashtagActivity extends AppCompatActivity {
+    @BindView(R.id.hashtagTextView)
+    TextView mHashtagTextView;
+    @BindView(R.id.listView) ListView mListView;
     private String[] posts = new String[] {"And here goes the #Arsenal", "Pablo Mari just underwent his first training session with the #Arsenal first team", "Cedric move to #Arsenal confirmed"};
-    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
